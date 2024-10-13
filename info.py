@@ -33,7 +33,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #----------- There will be channel id add in all these ---------
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002217231496'))  # set shortner log channel
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','https://t.me/INFINITE_MOVIES_2024')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', 'https://t.me/INFINITE_MOVIES_2024'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002083642579'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1002083642579')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', 'https://t.me/INFINITE_MOVIES_2024'))
 request_channel = environ.get('REQUEST_CHANNEL', 'https://t.me/INFINITE_MOVIES_2024') # If anyone sends a request message to your bot, you will get it in this channel.
