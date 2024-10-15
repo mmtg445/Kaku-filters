@@ -18,35 +18,35 @@ API_HASH = environ.get('API_HASH', '13853df234b2fbe18d9027a5985cc69e')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6093708466').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/IM_JISSHU") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002217231496'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/INFINITE_MOVIES_2024')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+USERNAME = environ.get('USERNAME', "https://t.me/Rahat146Tm") # ADMIN USERNAME
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/RM_Movie_Request')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dahif89943:sudipsaha2006@cluster0.iscxsme.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "sudipsaha2006")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002217231496'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','https://t.me/INFINITE_MOVIES_2024')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002083642579'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002083642579')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001990451388'))
-request_channel = environ.get('REQUEST_CHANNEL', 'https://t.me/INFINITE_MOVIES_2024') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', 'https://t.me/INFINITE_MOVIES_2024')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/INFINITE_MOVIES_2024') #Support group link ( make sure bot is admin )
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002400133611'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002400133611'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1002238603343')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002164413929'))
+request_channel = environ.get('REQUEST_CHANNEL', 'https://t.me/MoviesAdda24_72') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', 'https://t.me/MoviesAdda24_72')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/RM_Support_Group') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
 TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
-VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
+VERIFY_IMG = environ.get("VERIFY_IMG", "")
 SHORTENER_API = environ.get("SHORTENER_API", "")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '')
 SHORTENER_API2 = environ.get("SHORTENER_API2", "")
@@ -57,7 +57,7 @@ TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi"]
+LANGUAGES = ["hindi", "Bengali" "english", "telugu", "tamil", "kannada", "malayalam", "bengali", "marathi", "gujarati", "punjabi"]
 QUALITIES = ["HdRip","web-dl" ,"bluray", "hdr", "fhd" , "240p", "360p", "480p", "540p", "720p", "960p", "1080p", "1440p", "2K", "2160p", "4k", "5K", "8K"]
 YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
@@ -69,8 +69,8 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://i.ibb.co/qpxpGmC/image.jpg https://i.ibb.co/DQ35zLZ/image.jpg')).split()
-FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
+START_IMG = (environ.get('START_IMG', 'https://ibb.co/fdGkZPG https://ibb.co/KX2JgHS')).split()
+FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://ibb.co/1J9KMH2')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
@@ -86,7 +86,7 @@ PORT = environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 DELETE_TIME = int(environ.get('DELETE_TIME', 1200))
-IMDB = is_enabled('IMDB', False)
+IMDB = is_enabled('IMDB', True)
 FILE_CAPTION = environ.get('FILE_CAPTION', f'{script.FILE_CAPTION}')
 IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
 LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
